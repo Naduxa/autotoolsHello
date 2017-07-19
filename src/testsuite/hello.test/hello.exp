@@ -1,0 +1,4 @@
+send "1 2"
+expect{
+	-re
+}
