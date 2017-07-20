@@ -15,6 +15,6 @@ AC_PROG_CC
 # Checks for typedefs, structures, and compiler characteristics.
 
 # Checks for library functions.
-
+AC_CHECK_LIB(asd.h, asdw)
 AC_CONFIG_FILES([Makefile src/Makefile])
 AC_OUTPUT

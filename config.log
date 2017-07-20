@@ -38,33 +38,33 @@ PATH: /usr/games
 ## Core tests. ##
 ## ----------- ##
 
-configure:1845: checking for a BSD-compatible install
-configure:1913: result: /usr/bin/install -c
-configure:1924: checking whether build environment is sane
-configure:1979: result: yes
-configure:2130: checking for a thread-safe mkdir -p
-configure:2169: result: /bin/mkdir -p
-configure:2176: checking for gawk
-configure:2206: result: no
-configure:2176: checking for mawk
-configure:2192: found /usr/bin/mawk
-configure:2203: result: mawk
-configure:2214: checking whether make sets $(MAKE)
-configure:2236: result: yes
-configure:2265: checking whether make supports nested variables
+configure:1891: checking for a BSD-compatible install
+configure:1959: result: /usr/bin/install -c
+configure:1970: checking whether build environment is sane
+configure:2025: result: yes
+configure:2176: checking for a thread-safe mkdir -p
+configure:2215: result: /bin/mkdir -p
+configure:2222: checking for gawk
+configure:2252: result: no
+configure:2222: checking for mawk
+configure:2238: found /usr/bin/mawk
+configure:2249: result: mawk
+configure:2260: checking whether make sets $(MAKE)
 configure:2282: result: yes
-configure:2457: checking for gcc
-configure:2473: found /usr/bin/gcc
-configure:2484: result: gcc
-configure:2713: checking for C compiler version
-configure:2722: gcc --version >&5
+configure:2311: checking whether make supports nested variables
+configure:2328: result: yes
+configure:2503: checking for gcc
+configure:2519: found /usr/bin/gcc
+configure:2530: result: gcc
+configure:2759: checking for C compiler version
+configure:2768: gcc --version >&5
 gcc (Debian 6.3.0-18) 6.3.0 20170516
 Copyright (C) 2016 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:2733: $? = 0
-configure:2722: gcc -v >&5
+configure:2779: $? = 0
+configure:2768: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper
@@ -72,62 +72,94 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Debian 6.3.0-18' --with-bugurl=file:///usr/share/doc/gcc-6/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-6 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-6-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-6-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-6-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 6.3.0 20170516 (Debian 6.3.0-18) 
-configure:2733: $? = 0
-configure:2722: gcc -V >&5
+configure:2779: $? = 0
+configure:2768: gcc -V >&5
 gcc: error: unrecognized command line option '-V'
 gcc: fatal error: no input files
 compilation terminated.
-configure:2733: $? = 1
-configure:2722: gcc -qversion >&5
+configure:2779: $? = 1
+configure:2768: gcc -qversion >&5
 gcc: error: unrecognized command line option '-qversion'; did you mean '--version'?
 gcc: fatal error: no input files
 compilation terminated.
-configure:2733: $? = 1
-configure:2753: checking whether the C compiler works
-configure:2775: gcc    conftest.c  >&5
-configure:2779: $? = 0
-configure:2827: result: yes
-configure:2830: checking for C compiler default output file name
-configure:2832: result: a.out
-configure:2838: checking for suffix of executables
-configure:2845: gcc -o conftest    conftest.c  >&5
-configure:2849: $? = 0
-configure:2871: result: 
-configure:2893: checking whether we are cross compiling
-configure:2901: gcc -o conftest    conftest.c  >&5
-configure:2905: $? = 0
-configure:2912: ./conftest
-configure:2916: $? = 0
-configure:2931: result: no
-configure:2936: checking for suffix of object files
-configure:2958: gcc -c   conftest.c >&5
+configure:2779: $? = 1
+configure:2799: checking whether the C compiler works
+configure:2821: gcc    conftest.c  >&5
+configure:2825: $? = 0
+configure:2873: result: yes
+configure:2876: checking for C compiler default output file name
+configure:2878: result: a.out
+configure:2884: checking for suffix of executables
+configure:2891: gcc -o conftest    conftest.c  >&5
+configure:2895: $? = 0
+configure:2917: result: 
+configure:2939: checking whether we are cross compiling
+configure:2947: gcc -o conftest    conftest.c  >&5
+configure:2951: $? = 0
+configure:2958: ./conftest
 configure:2962: $? = 0
-configure:2983: result: o
-configure:2987: checking whether we are using the GNU C compiler
-configure:3006: gcc -c   conftest.c >&5
-configure:3006: $? = 0
-configure:3015: result: yes
-configure:3024: checking whether gcc accepts -g
-configure:3044: gcc -c -g  conftest.c >&5
-configure:3044: $? = 0
-configure:3085: result: yes
-configure:3102: checking for gcc option to accept ISO C89
-configure:3165: gcc  -c -g -O2  conftest.c >&5
-configure:3165: $? = 0
-configure:3178: result: none needed
-configure:3203: checking whether gcc understands -c and -o together
-configure:3225: gcc -c conftest.c -o conftest2.o
-configure:3228: $? = 0
-configure:3225: gcc -c conftest.c -o conftest2.o
-configure:3228: $? = 0
-configure:3240: result: yes
-configure:3268: checking for style of include used by make
-configure:3296: result: GNU
-configure:3322: checking dependency style of gcc
-configure:3433: result: gcc3
-configure:3604: checking that generated files are newer than configure
-configure:3610: result: done
-configure:3633: creating ./config.status
+configure:2977: result: no
+configure:2982: checking for suffix of object files
+configure:3004: gcc -c   conftest.c >&5
+configure:3008: $? = 0
+configure:3029: result: o
+configure:3033: checking whether we are using the GNU C compiler
+configure:3052: gcc -c   conftest.c >&5
+configure:3052: $? = 0
+configure:3061: result: yes
+configure:3070: checking whether gcc accepts -g
+configure:3090: gcc -c -g  conftest.c >&5
+configure:3090: $? = 0
+configure:3131: result: yes
+configure:3148: checking for gcc option to accept ISO C89
+configure:3211: gcc  -c -g -O2  conftest.c >&5
+configure:3211: $? = 0
+configure:3224: result: none needed
+configure:3249: checking whether gcc understands -c and -o together
+configure:3271: gcc -c conftest.c -o conftest2.o
+configure:3274: $? = 0
+configure:3271: gcc -c conftest.c -o conftest2.o
+configure:3274: $? = 0
+configure:3286: result: yes
+configure:3314: checking for style of include used by make
+configure:3342: result: GNU
+configure:3368: checking dependency style of gcc
+configure:3479: result: gcc3
+configure:3503: checking for asdw in -lasd.h
+configure:3528: gcc -o conftest -g -O2   conftest.c -lasd.h   >&5
+/usr/bin/ld: cannot find -lasd.h
+collect2: error: ld returned 1 exit status
+configure:3528: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "hello"
+| #define PACKAGE_TARNAME "hello"
+| #define PACKAGE_VERSION "1.1"
+| #define PACKAGE_STRING "hello 1.1"
+| #define PACKAGE_BUGREPORT "nadena.xq95@mail.ru"
+| #define PACKAGE_URL ""
+| #define PACKAGE "hello"
+| #define VERSION "1.1"
+| /* end confdefs.h.  */
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| #ifdef __cplusplus
+| extern "C"
+| #endif
+| char asdw ();
+| int
+| main ()
+| {
+| return asdw ();
+|   ;
+|   return 0;
+| }
+configure:3537: result: no
+configure:3695: checking that generated files are newer than configure
+configure:3701: result: done
+configure:3724: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -169,6 +201,7 @@ ac_cv_env_host_alias_set=
 ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
+ac_cv_lib_asd_h_asdw=no
 ac_cv_objext=o
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_path_mkdir=/bin/mkdir
