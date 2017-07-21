@@ -100,7 +100,7 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_hello_world1_OBJECTS = hello_world1-main.$(OBJEXT)
+am_hello_world1_OBJECTS = hello_world1-mainw2.$(OBJEXT)
 hello_world1_OBJECTS = $(am_hello_world1_OBJECTS)
 hello_world1_DEPENDENCIES = ${top_srcdir}/src/libhello/libhello.la
 AM_V_lt = $(am__v_lt_@AM_V@)
@@ -289,7 +289,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 hello_world1_SOURCES = \
-  main.c
+		       mainw2.c
 
 hello_world1_CFLAGS = \
   -I$(top_srcdir)/src/libhello
@@ -390,7 +390,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/hello_world1-main.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/hello_world1-mainw2.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -416,19 +416,19 @@ distclean-compile:
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LTCOMPILE) -c -o $@ $<
 
-hello_world1-main.o: main.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -MT hello_world1-main.o -MD -MP -MF $(DEPDIR)/hello_world1-main.Tpo -c -o hello_world1-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/hello_world1-main.Tpo $(DEPDIR)/hello_world1-main.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='main.c' object='hello_world1-main.o' libtool=no @AMDEPBACKSLASH@
+hello_world1-mainw2.o: mainw2.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -MT hello_world1-mainw2.o -MD -MP -MF $(DEPDIR)/hello_world1-mainw2.Tpo -c -o hello_world1-mainw2.o `test -f 'mainw2.c' || echo '$(srcdir)/'`mainw2.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/hello_world1-mainw2.Tpo $(DEPDIR)/hello_world1-mainw2.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='mainw2.c' object='hello_world1-mainw2.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -c -o hello_world1-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -c -o hello_world1-mainw2.o `test -f 'mainw2.c' || echo '$(srcdir)/'`mainw2.c
 
-hello_world1-main.obj: main.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -MT hello_world1-main.obj -MD -MP -MF $(DEPDIR)/hello_world1-main.Tpo -c -o hello_world1-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/hello_world1-main.Tpo $(DEPDIR)/hello_world1-main.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='main.c' object='hello_world1-main.obj' libtool=no @AMDEPBACKSLASH@
+hello_world1-mainw2.obj: mainw2.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -MT hello_world1-mainw2.obj -MD -MP -MF $(DEPDIR)/hello_world1-mainw2.Tpo -c -o hello_world1-mainw2.obj `if test -f 'mainw2.c'; then $(CYGPATH_W) 'mainw2.c'; else $(CYGPATH_W) '$(srcdir)/mainw2.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/hello_world1-mainw2.Tpo $(DEPDIR)/hello_world1-mainw2.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='mainw2.c' object='hello_world1-mainw2.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -c -o hello_world1-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(hello_world1_CFLAGS) $(CFLAGS) -c -o hello_world1-mainw2.obj `if test -f 'mainw2.c'; then $(CYGPATH_W) 'mainw2.c'; else $(CYGPATH_W) '$(srcdir)/mainw2.c'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo

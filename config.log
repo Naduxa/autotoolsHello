@@ -125,7 +125,6 @@ configure:3593: checking for style of include used by make
 configure:3621: result: GNU
 configure:3647: checking dependency style of gcc
 configure:3758: result: gcc3
-configure:3773: error: AAAAAAAAAAAAAAAAAAAAAA
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -299,4 +298,4 @@ target_alias=''
 #define PACKAGE_BUGREPORT "info@hello.org"
 #define PACKAGE_URL "http://www.hello.org"
 
-configure: exit 1
+configure: exit 2
