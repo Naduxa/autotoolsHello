@@ -1,3 +1,4 @@
-bin_PROGRAMS = hello
-hello_SOURCES = hello.c
-
+SUBDIRS = \
+  libhello \
+  hello1 \
+  hello2

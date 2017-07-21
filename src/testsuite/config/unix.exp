@@ -1,7 +1,0 @@
-proc hello_exit(){}
-proc hello_version(){}
-proc hello_start(){
-	global HELLO
-	spawn HELLO
-	
-}

@@ -1,20 +1,21 @@
-#                                               -*- Autoconf -*-
-# Process this file with autoconf to produce a configure script.
+AC_INIT([hello],
+  [1.0.0],
+  [info@hello.org],
+  [hello],
+  [http://www.hello.org])
 
-AC_PREREQ([2.69])
-AC_INIT([hello], [1.1], [nadena.xq95@mail.ru])
-AC_CONFIG_SRCDIR([src/hello.c])
-AM_INIT_AUTOMAKE
-# Checks for programs.
+AM_INIT_AUTOMAKE([1.11 subdir-objects -Wno-portability no-define no-dist-gzip dist-xz])
 AC_PROG_CC
 
-# Checks for libraries.
+PKG_PROG_PKG_CONFIG(0.16)
+LT_INIT
 
-# Checks for header files.
+PKG_CHECK_MODULES([HELLO_WORLD], ["glib-2.0"])
 
-# Checks for typedefs, structures, and compiler characteristics.
-
-# Checks for library functions.
-AC_CHECK_LIB(asd.h, asdw)
-AC_CONFIG_FILES([Makefile src/Makefile])
-AC_OUTPUT
+AC_OUTPUT([
+    Makefile
+    src/Makefile
+    src/libhello/Makefile
+    src/libhello/libhello.pc
+    src/hello1/Makefile
+    src/hello2/Makefile])
